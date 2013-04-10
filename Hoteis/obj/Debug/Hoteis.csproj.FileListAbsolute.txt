@@ -4,9 +4,6 @@ C:\Users\basmoura\Documents\Visual Studio 2010\Projects\Hoteis\Hoteis\obj\Debug\
 C:\Users\basmoura\Documents\Visual Studio 2010\Projects\Hoteis\Hoteis\obj\Debug\Hoteis.pdb
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\Hoteis.dll
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\Hoteis.pdb
-C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\obj\Debug\Hoteis.csprojResolveAssemblyReference.cache
-C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\obj\Debug\Hoteis.dll
-C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\obj\Debug\Hoteis.pdb
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\AjaxControlToolkit.dll
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\HtmlAgilityPack.dll
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\SanitizerProviders.dll
@@ -26,3 +23,5 @@ C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\ru\Aja
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\tr-TR\AjaxControlToolkit.resources.dll
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\zh-CHS\AjaxControlToolkit.resources.dll
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\obj\Debug\Hoteis.dll
+C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\obj\Debug\Hoteis.pdb
