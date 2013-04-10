@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Hoteis.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>hotelli</title>
+    <link rel="Stylesheet" type="text/css" href="Resources/Styles/Reset.css" />
+    <link rel="stylesheet" type="text/css" href="Resources/Styles/Pagina.css" />
+    <link rel="stylesheet" type="text/css" href="Resources/Styles/Menu.css" />
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <header>
+        <div class="wrap">
+            <h1>
+                <asp:Label ID="lblHotelli" runat="server" Text="Hotelli" CssClass="label" Style="font-size: 30px; color: #fff; margin-bottom: -5px;"></asp:Label><br />
+                <asp:Label ID="lblUsuario" runat="server" CssClass="usuariologado"></asp:Label>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="/Paginas/Home/Index.aspx">Inicio</a></li>
+                    <li><a href="#">Hotel</a>
+                        <ul>
+                            <li><a href="/Paginas/Hotel/Index.aspx">Cadastrar Hotel</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Quarto</a>
+                        <ul>
+                            <li><a href="/Paginas/Quarto/Index.aspx">Cadastrar Quarto</a></li>
+                            <li><a href="/Paginas/Tipo/Index.aspx">Cadastrar Tipo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cliente</a>
+                        <ul>
+                            <li><a href="/Paginas/Cliente/Index.aspx">Cadastrar Cliente</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/Paginas/AreaDeLazer/Index.aspx">Área de Lazer</a></li>
+                    <li><a href="/Paginas/Atividade/Index.aspx">Atividade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div id="content">
+            <div id="validator">
+                <asp:ValidationSummary ID="ValidationSummary1" CssClass="validationsummary" runat="server" HeaderText="<div class='validationheader'>Por favor verifique o(s) seguinte(s) erro(s): </div>" DisplayMode="BulletList" EnableClientScript="true" />
+            </div>
+            <div id="mensagem" class="sucesso" runat="server" visible="false">
+                <asp:Label ID="lblMensagem" runat="server"></asp:Label>
+            </div>
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+    </footer>
+</body>
+</html>

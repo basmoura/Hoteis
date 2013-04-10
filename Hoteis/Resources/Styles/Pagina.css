@@ -1,0 +1,334 @@
+﻿body
+{
+    font-family: Segoe UI;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+header
+{
+    height: 80px;
+    background-color: #444;
+    border-bottom: 1px solid #424242;
+    margin-bottom: 15px;
+}
+
+    header.wrap
+    {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    header h1
+    {
+        float: left;
+        border-bottom: none;
+        margin-left: 10px;
+    }
+
+    header.user
+    {
+        color: #fff;
+        width: 90px;
+        float: left;
+    }
+
+    header nav
+    {
+        margin-top: 15px;
+        color: #fff;
+        float: right;
+        margin-right: 10px;
+    }
+
+.menu
+{
+    width: 90%;
+    margin: 0 auto;
+    color: #ccc;
+}
+
+#content
+{
+    width: 75%;
+    margin: 0 auto;
+}
+
+h1
+{
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+    margin: 15px 0 15px 0;
+}
+
+    h1.login
+    {
+        font-size: 25px;
+        font-weight: 500;
+        border: none;
+    }
+
+div.linha
+{
+    display: inline-block;
+}
+
+div.usuario
+{
+    margin-top: 20px;
+    background-color: #333;
+    text-align: right;
+}
+
+div.sucesso
+{
+    background-color: #e5e5e5;
+    border: 1px dashed #35aa47;
+    padding: 8px;
+    font-weight: bold;
+    color: #35aa47;
+}
+
+div.grid
+{
+    background-color: #fff;
+    width: 98.5%;
+    padding: 8px;
+}
+
+div.login
+{
+    background-color: #fff;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.title
+{
+    width: 247px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+div.center
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.form
+{
+    display: block;
+}
+
+.btn
+{
+    background-image: none;
+    border: 0;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    height: 34px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .btn.info
+    {
+        font-weight: bold;
+        background-color: #4d90fe;
+        color: #fff;
+    }
+
+        .btn.info:hover, .btn.info:active
+        {
+            background-color: #0362fd;
+        }
+
+    .btn.erro
+    {
+        font-weight: bold;
+        background-color: #d84a38;
+        color: #fff;
+    }
+
+        .btn.erro:hover, .btn.erro:active
+        {
+            background-color: #bb2413;
+        }
+
+    .btn.add
+    {
+        font-weight: bold;
+        background-color: #35aa47;
+        color: #fff;
+    }
+
+        .btn.add:hover, .btn.add:active
+        {
+            background-color: #1d943b;
+        }
+
+    .btn.default
+    {
+        font-weight: bold;
+        background-color: #e6e6e6;
+        color: #333;
+    }
+
+        .btn.default:hover, .btn.default:active
+        {
+            background-color: #d8d8d8;
+        }
+
+.textbox
+{
+    color: #333333;
+    outline: 0;
+    height: 20px;
+    padding: 6px 6px !important;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+    .textbox.small
+    {
+        width: 60px;
+    }
+
+    .textbox.medium
+    {
+        width: 328px;
+    }
+
+    .textbox.large
+    {
+        width: 500px;
+    }
+
+    .textbox.login
+    {
+        border-left: 2px solid #35aa47;
+    }
+
+.label
+{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 300;
+    padding-bottom: 3px;
+}
+
+    .label.usuario
+    {
+        margin-right: 10px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+.usuariologado
+{
+    font-style: italic;
+    color: #fff;
+    font-size: 14px;
+}
+
+.dropdown
+{
+    color: #333333;
+    outline: 0;
+    height: 35px;
+    padding: 6px 6px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    width: 170px;
+}
+
+.gridview
+{
+    width: 100%;
+    background-color: #fff;
+    border: 0;
+    border-collapse: collapse;
+}
+
+    .gridview th
+    {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        padding: 8px;
+        color: #424242;
+        border-bottom-color: #e5e5e5;
+        border-left: none;
+        border-right: none;
+        border-top: 0;
+    }
+
+    .gridview td
+    {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        padding: 8px;
+        color: #424242;
+        border-bottom-color: #e5e5e5;
+        border-left: none;
+        border-right: none;
+        border-top: 0;
+    }
+
+    .gridview .alt
+    {
+        background-color: #eee;
+    }
+
+.validationsummary
+{
+    background-color: #e5e5e5;
+    border: 1px dashed #d84a38;
+    padding: 8px;
+}
+
+.validationheader
+{
+    color: #d84a38;
+    font-weight: bold;
+}
+
+.validationsummary ul
+{
+    list-style-type: none;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 3px;
+}
+.radiobutton
+{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    margin-right: 15px;
+}
