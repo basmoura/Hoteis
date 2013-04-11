@@ -23,5 +23,18 @@ namespace Hoteis.Paginas.Cliente
         {
             Response.Redirect("Cadastrar.aspx");
         }
+
+        protected void gvwClientes_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                Label lblCpf = (Label)e.Row.FindControl("lblCpf");
+                Label lblIdade = (Label)e.Row.FindControl("lblIdade");
+
+                Modelo.Cliente cliente = ControleClientes.BuscarCliente(lblCpf.Text);
+
+                lblIdade.Text = ControleClientes.CalcularIdade(Convert.ToDateTime(cliente.DataNascimento)).ToString();
+            }
+        }
     }
 }

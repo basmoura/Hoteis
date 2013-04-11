@@ -10,7 +10,7 @@
     </div>
     <br />
     <div class="grid">
-        <asp:GridView ID="gvwClientes" runat="server" AutoGenerateColumns="false" ShowHeaderWhenEmpty="true" EmptyDataText="Nenhum cliente cadastrado" CssClass="gridview">
+        <asp:GridView ID="gvwClientes" runat="server" AutoGenerateColumns="false" ShowHeaderWhenEmpty="true" EmptyDataText="Nenhum cliente cadastrado" CssClass="gridview" OnRowDataBound="gvwClientes_RowDataBound">
             <Columns>
                 <asp:TemplateField HeaderText="CPF">
                     <ItemTemplate>
@@ -27,9 +27,9 @@
                         <asp:Label ID="lblEmail" runat="server" Text='<%# Eval("email") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Data de Nascimento">
+                <asp:TemplateField HeaderText="Idade">
                     <ItemTemplate>
-                        <asp:Label ID="lblDataNascimento" runat="server" Text='<%# Eval("dataNascimento") %>'></asp:Label>
+                        <asp:Label ID="lblIdade" runat="server"></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Endereço">

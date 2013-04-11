@@ -72,13 +72,6 @@ namespace Hoteis.Modelo
             set { estado = value; }
         }
 
-        //public int Idade
-        //{
-        //    get
-        //    {
 
-        //        return 
-        //    }
-        //}
     }
 }

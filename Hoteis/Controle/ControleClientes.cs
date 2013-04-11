@@ -27,5 +27,15 @@ namespace Hoteis.Controle
         {
             return listaClientes;
         }
+
+        public static int CalcularIdade(DateTime pDataNascimento)
+        {
+            int anos = DateTime.Now.Year - pDataNascimento.Year;
+
+            if (DateTime.Now.Month < pDataNascimento.Month || (DateTime.Now.Month == pDataNascimento.Month && DateTime.Now.Day < pDataNascimento.Day))
+                anos--;
+
+            return anos;
+        }
     }
 }
