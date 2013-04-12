@@ -76,13 +76,13 @@ namespace Hoteis.Paginas.Cliente {
         protected global::System.Web.UI.WebControls.TextBox txtDataNascimento;
         
         /// <summary>
-        /// rfvTelefone control.
+        /// rfvDataNascimento control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTelefone;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDataNascimento;
         
         /// <summary>
         /// revDataNascimento control.

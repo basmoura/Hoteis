@@ -16,7 +16,7 @@
         <div class="linha">
             <asp:Label ID="lblDataNascimento" runat="server" Text="Data de Nascimento" CssClass="label"></asp:Label><br />
             <asp:TextBox ID="txtDataNascimento" runat="server" CssClass="textbox"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="rfvTelefone" runat="server" ControlToValidate="txtDataNascimento" ErrorMessage="Campo 'Data de Nascimento' é obrigatório" Text="*"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="rfvDataNascimento" runat="server" ControlToValidate="txtDataNascimento" ErrorMessage="Campo 'Data de Nascimento' é obrigatório" Text="*"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="revDataNascimento" runat="server" ValidationExpression="^([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0]?[1-9]|[1][0-2])[./-]([0-9]{4}|[0-9]{2})$" ControlToValidate="txtDataNascimento" ErrorMessage="Campo 'Data de Nascimento' está inválido" Text="*"></asp:RegularExpressionValidator>
             <ajaxToolkit:MaskedEditExtender ID="meeDataNascimento" runat="server" MaskType="Date" Mask="99/99/9999" UserDateFormat="DayMonthYear" ClearMaskOnLostFocus="false" TargetControlID="txtDataNascimento"></ajaxToolkit:MaskedEditExtender>
         </div>

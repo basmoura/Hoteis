@@ -12,7 +12,7 @@ namespace Hoteis.Controle
 
         public static void Adicionar(AreaLazer pAreaLazer)
         {
-            if (listaAreaLazer.Any(a => a.Id == pAreaLazer.Id))
+            if (listaAreaLazer.Any(a => a.Id == pAreaLazer.Id && a.Hotel == pAreaLazer.Hotel))
                 throw new Exception("Area de Lazer já cadastrada");
 
             listaAreaLazer.Add(pAreaLazer);
@@ -26,6 +26,11 @@ namespace Hoteis.Controle
         public static List<AreaLazer> ListarAreasLazer()
         {
             return listaAreaLazer;
+        }
+
+        public static List<AreaLazer> ConsultarPorHotel(Hotel pHotel)
+        {
+            return listaAreaLazer.Where(a => a.Hotel.Codigo == pHotel.Codigo).ToList();
         }
     }
 }

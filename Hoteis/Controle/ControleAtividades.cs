@@ -24,5 +24,6 @@ namespace Hoteis.Controle
         {
             return listaAtividades;
         }
+
     }
 }

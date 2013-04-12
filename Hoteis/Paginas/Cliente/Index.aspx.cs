@@ -30,10 +30,24 @@ namespace Hoteis.Paginas.Cliente
             {
                 Label lblCpf = (Label)e.Row.FindControl("lblCpf");
                 Label lblIdade = (Label)e.Row.FindControl("lblIdade");
+                Label lblEstado = (Label)e.Row.FindControl("lblEstado");
 
                 Modelo.Cliente cliente = ControleClientes.BuscarCliente(lblCpf.Text);
 
                 lblIdade.Text = ControleClientes.CalcularIdade(Convert.ToDateTime(cliente.DataNascimento)).ToString();
+
+                switch (lblEstado.Text)
+                {
+                    case "A":
+                        lblEstado.Text = "Alagoas";
+                        break;
+                    case "B":
+                        lblEstado.Text = "Bahia";
+                        break;
+                    case "S":
+                        lblEstado.Text = "Sergipe";
+                        break;
+                }
             }
         }
     }

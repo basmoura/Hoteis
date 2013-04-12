@@ -35,7 +35,8 @@ namespace Hoteis.Paginas.Cliente
 
                 ControleClientes.Adicionar(cliente);
 
-                Master.MensagemSessao = "Cliente cadastrado com sucesso";
+                Session["Mensagem"] = "Cliente cadastrado com sucesso";
+
                 Response.Redirect("Index.aspx");
             }
             catch (Exception ex)

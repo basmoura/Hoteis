@@ -21,23 +21,10 @@ namespace Hoteis
             set { lblUsuario.Text = string.Format("Bem vindo(a), {0}", value); }
         }
 
-        public string MensagemSessao
-        {
-            get
-            {
-                if (Session["Mensagem"] != null)
-                {
-                    return Session["Mensagem"].ToString();
-                }
-                else
-                {
-                    DivMensagemVisible(false);
-                    return string.Empty;
-                }
-            }
-            set { Session["Mensagem"] = value; }
-        }
-
+        //public string MensagemSessao
+        //{
+            
+        //}
 
         public String Mensagem
         {
@@ -55,7 +42,6 @@ namespace Hoteis
             if (!IsPostBack)
             {
                 UsuarioLogado = Usuario;
-                Mensagem = MensagemSessao;
             }
         }
     }

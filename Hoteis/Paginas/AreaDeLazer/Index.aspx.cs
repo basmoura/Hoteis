@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Hoteis.Controle;
 
 namespace Hoteis.Paginas.AreaDeLazer
 {
@@ -11,7 +12,11 @@ namespace Hoteis.Paginas.AreaDeLazer
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                gvwAreasLazer.DataSource = ControleAreaLazer.ListarAreasLazer();
+                gvwAreasLazer.DataBind();
+            }
         }
 
         protected void btnCadastrar_Click(object sender, EventArgs e)

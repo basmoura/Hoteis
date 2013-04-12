@@ -39,7 +39,7 @@
                         </ul>
                     </li>
                     <li><a href="/Paginas/AreaDeLazer/Index.aspx">Área de Lazer</a></li>
-                    <li><a href="/Paginas/Atividade/Index.aspx">Atividade</a></li>
+                    <li><a href="/Paginas/Atividade/Cadastrar.aspx">Atividade</a></li>
                 </ul>
             </nav>
         </div>
