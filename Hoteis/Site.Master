@@ -40,6 +40,7 @@
                     </li>
                     <li><a href="/Paginas/AreaDeLazer/Index.aspx">Área de Lazer</a></li>
                     <li><a href="/Paginas/Atividade/Cadastrar.aspx">Atividade</a></li>
+                    <li><a href="/Paginas/Reserva/Index.aspx">Reservas</a></li>
                 </ul>
             </nav>
         </div>

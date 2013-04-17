@@ -8,7 +8,7 @@ namespace Hoteis.Modelo
     public class Reserva
     {
         private Cliente cliente;
-        private string dataReserva;
+        private DateTime dataReserva;
         private Hotel hotel;
         private Quarto quarto;
 
@@ -20,7 +20,7 @@ namespace Hoteis.Modelo
             set { cliente = value; }
         }
 
-        public string DataReserva
+        public DateTime DataReserva
         {
             get { return dataReserva; }
             set { dataReserva = value; }

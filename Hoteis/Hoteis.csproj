@@ -82,7 +82,8 @@
     <Content Include="Paginas\Hotel\Index.aspx" />
     <Content Include="Paginas\Quarto\Cadastrar.aspx" />
     <Content Include="Paginas\Quarto\Index.aspx" />
-    <Content Include="Paginas\Reserva\Cadastro.aspx" />
+    <Content Include="Paginas\Reserva\Cadastrar.aspx" />
+    <Content Include="Paginas\Reserva\Index.aspx" />
     <Content Include="Paginas\Tipo\Cadastrar.aspx" />
     <Content Include="Paginas\Tipo\Index.aspx" />
     <Content Include="Resources\Images\cadastrar.png" />
@@ -204,12 +205,19 @@
     <Compile Include="Paginas\Quarto\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Reserva\Cadastro.aspx.cs">
-      <DependentUpon>Cadastro.aspx</DependentUpon>
+    <Compile Include="Paginas\Reserva\Cadastrar.aspx.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Reserva\Cadastro.aspx.designer.cs">
-      <DependentUpon>Cadastro.aspx</DependentUpon>
+    <Compile Include="Paginas\Reserva\Cadastrar.aspx.designer.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Reserva\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Reserva\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Tipo\Cadastrar.aspx.cs">
       <DependentUpon>Cadastrar.aspx</DependentUpon>

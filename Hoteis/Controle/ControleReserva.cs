@@ -22,12 +22,12 @@ namespace Hoteis.Controle
             listaReservas.Add(pReserva);
         }
 
-        public List<Reserva> ConsultarReserva(int pIdHotel, string pCliente, string pDataReserva)
+        public static List<Reserva> ConsultarReservas(int pIdHotel, string pCliente, DateTime pDataReserva)
         {
             var reservas = from r in listaReservas
                            where (pIdHotel == 0 || r.Hotel.Codigo == pIdHotel) &&
                                  (string.IsNullOrEmpty(pCliente) || r.Cliente.Nome.Contains(pCliente)) &&
-                                 (string.IsNullOrEmpty(pDataReserva) || r.DataReserva == pDataReserva)
+                                 (pDataReserva == DateTime.MinValue || r.DataReserva == pDataReserva)
                            select r;
 
             return reservas.ToList();

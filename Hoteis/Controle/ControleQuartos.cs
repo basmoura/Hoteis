@@ -27,5 +27,15 @@ namespace Hoteis.Controle
         {
             return listaQuartos;
         }
+
+        public static List<Quarto> ListarQuartosDisponiveis()
+        {
+            return listaQuartos.Where(q => q.Disponivel == true).ToList();
+        }
+
+        public static List<Quarto> ConsultarQuartos(int pIdHotel)
+        {
+            return listaQuartos.Where(q => q.Hotel.Codigo == pIdHotel && q.Disponivel == true).ToList();
+        }
     }
 }

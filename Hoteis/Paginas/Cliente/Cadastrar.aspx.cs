@@ -25,7 +25,7 @@ namespace Hoteis.Paginas.Cliente
                 Modelo.Cliente cliente = new Modelo.Cliente();
 
                 cliente.CPF = txtCPF.Text;
-                cliente.DataNascimento = txtDataNascimento.Text;
+                cliente.DataNascimento = Convert.ToDateTime(txtDataNascimento.Text);
                 cliente.Nome = txtNome.Text;
                 cliente.Email = txtEmail.Text;
                 cliente.Endereco = txtEndereco.Text;

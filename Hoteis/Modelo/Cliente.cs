@@ -8,14 +8,13 @@ namespace Hoteis.Modelo
     public class Cliente
     {
         private string cpf;
-        private string dataNascimento;
+        private DateTime dataNascimento;
         private string nome;
         private string email;
         private string endereco;
         private string telefone;
         private string sexo;
         private string estado;
-        private int idade;
 
         public Cliente() { }
 
@@ -25,7 +24,7 @@ namespace Hoteis.Modelo
             set { cpf = value; }
         }
 
-        public string DataNascimento
+        public DateTime DataNascimento
         {
             get { return dataNascimento; }
             set { dataNascimento = value; }
@@ -71,7 +70,5 @@ namespace Hoteis.Modelo
             get { return estado; }
             set { estado = value; }
         }
-
-
     }
 }
