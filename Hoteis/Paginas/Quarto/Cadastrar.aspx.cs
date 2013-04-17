@@ -40,6 +40,7 @@ namespace Hoteis.Paginas.Quarto
                 quarto.QtdCamas = Convert.ToInt32(txtCamas.Text);
                 quarto.Tamanho = Convert.ToDouble(txtTamanho.Text);
                 quarto.VlDiaria = Convert.ToDouble(txtValorDiaria.Text);
+                quarto.Disponivel = true;
 
                 ControleQuartos.Adicionar(quarto);
 

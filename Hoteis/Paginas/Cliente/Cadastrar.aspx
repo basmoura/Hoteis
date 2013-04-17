@@ -11,7 +11,6 @@
             <asp:TextBox ID="txtCPF" runat="server" CssClass="textbox" MaxLength="14"></asp:TextBox>
             <ajaxToolkit:FilteredTextBoxExtender ID="ftbCpf" runat="server" FilterType="Custom, Numbers" ValidChars=".-" TargetControlID="txtCpf"></ajaxToolkit:FilteredTextBoxExtender>
             <asp:RequiredFieldValidator ID="rfvCpf" runat="server" ErrorMessage="Campo 'CPF' é obrigatório" ControlToValidate="txtCpf" Text="*" Display="Dynamic"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="revCpf" runat="server" ValidationExpression="^\d{3}\.\d{3}\.\d{3}-\d{2}$" ControlToValidate="txtCpf" ErrorMessage="Campo 'CPF' está inválido" Text="*" Display="Dynamic"></asp:RegularExpressionValidator>
         </div>
         <div class="linha">
             <asp:Label ID="lblDataNascimento" runat="server" Text="Data de Nascimento" CssClass="label"></asp:Label><br />
@@ -23,12 +22,10 @@
         <div>
             <asp:Label ID="lblNome" runat="server" Text="Nome" CssClass="label"></asp:Label><br />
             <asp:TextBox ID="txtNome" runat="server" CssClass="textbox medium" MaxLength="30"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="rfvNome" runat="server" ErrorMessage="Campo 'Nome' é obrigatório" ControlToValidate="txtNome" Text="*"></asp:RequiredFieldValidator>
         </div>
         <div>
             <asp:Label ID="lblEmail" runat="server" Text="Email" CssClass="label"></asp:Label><br />
             <asp:TextBox ID="txtEmail" runat="server" CssClass="textbox medium" MaxLength="20"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Campo 'Email' é obrigatório" Text="*" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="revEmail" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtEmail" ErrorMessage="Campo 'Email' está inválido" Text="*"></asp:RegularExpressionValidator>
         </div>
         <div>
@@ -52,7 +49,7 @@
         <div class="linha">
             <asp:Label ID="lblEstado" runat="server" Text="Estado" CssClass="label"></asp:Label><br />
             <asp:DropDownList ID="ddlEstado" runat="server" CssClass="dropdown" Width="150px">
-                <asp:ListItem Value="">Selecione</asp:ListItem>
+                <asp:ListItem Value="0">Selecione</asp:ListItem>
                 <asp:ListItem Value="A">Alagoas</asp:ListItem>
                 <asp:ListItem Value="B">Bahia</asp:ListItem>
                 <asp:ListItem Value="S">Sergipe</asp:ListItem>

@@ -36,7 +36,6 @@ namespace Hoteis.Paginas.Hotel
                 hotel.Cidade = txtCidade.Text;
                 hotel.Estado = txtEstado.Text;
 
-
                 ControleHoteis.Adicionar(hotel);
 
                 Master.DivMensagemVisible(true);

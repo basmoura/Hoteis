@@ -21,11 +21,6 @@ namespace Hoteis
             set { lblUsuario.Text = string.Format("Bem vindo(a), {0}", value); }
         }
 
-        //public string MensagemSessao
-        //{
-            
-        //}
-
         public String Mensagem
         {
             get { return lblMensagem.Text; }

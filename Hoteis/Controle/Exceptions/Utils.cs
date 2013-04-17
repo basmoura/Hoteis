@@ -38,6 +38,10 @@ namespace Hoteis.Controle.Exceptions
                 {
                     ((TextBox)ctl).Text = String.Empty;
                 }
+                if (ctl is DropDownList)
+                {
+                    ((DropDownList)ctl).SelectedValue = "0";
+                }
                 else if (ctl.Controls.Count > 0)
                 {
                     Limpar(ctl);

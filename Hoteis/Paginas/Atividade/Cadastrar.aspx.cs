@@ -22,9 +22,6 @@ namespace Hoteis.Paginas.Atividade
 
                 lbxClientes.DataSource = clientes;
                 lbxClientes.DataBind();
-
-                lbxClientes2.DataSource = clientes2;
-                lbxClientes2.DataBind();
             }
         }
 
@@ -64,7 +61,6 @@ namespace Hoteis.Paginas.Atividade
                 if (item.Selected)
                 {
                     item.Selected = false;
-                    lbxClientes2.Items.Remove(item);
                     lbxClientes.Items.Add(item);
                 }
             }

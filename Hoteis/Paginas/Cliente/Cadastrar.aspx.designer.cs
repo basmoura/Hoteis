@@ -49,15 +49,6 @@ namespace Hoteis.Paginas.Cliente {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCpf;
         
         /// <summary>
-        /// revCpf control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revCpf;
-        
-        /// <summary>
         /// lblDataNascimento control.
         /// </summary>
         /// <remarks>
@@ -121,15 +112,6 @@ namespace Hoteis.Paginas.Cliente {
         protected global::System.Web.UI.WebControls.TextBox txtNome;
         
         /// <summary>
-        /// rfvNome control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNome;
-        
-        /// <summary>
         /// lblEmail control.
         /// </summary>
         /// <remarks>
@@ -146,15 +128,6 @@ namespace Hoteis.Paginas.Cliente {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
-        
-        /// <summary>
-        /// rfvEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
         
         /// <summary>
         /// revEmail control.

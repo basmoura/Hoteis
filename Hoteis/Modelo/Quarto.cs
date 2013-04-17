@@ -7,11 +7,12 @@ namespace Hoteis.Modelo
 {
     public class Quarto
     {
-        
+
         private int nrQuarto;
         private int qtdCamas;
         private double tamanho;
         private double vlDiaria;
+        private bool disponivel;
 
         private Hotel hotel;
         private TipoQuarto tipoQuarto;
@@ -46,6 +47,12 @@ namespace Hoteis.Modelo
         {
             get { return vlDiaria; }
             set { vlDiaria = value; }
+        }
+
+        public bool Disponivel
+        {
+            get { return disponivel; }
+            set { disponivel = value; }
         }
 
         public Hotel Hotel
