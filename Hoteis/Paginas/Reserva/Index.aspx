@@ -35,22 +35,22 @@
             <Columns>
                 <asp:TemplateField HeaderText="Hotel">
                     <ItemTemplate>
-                        <asp:Label ID="lblNrQuarto" runat="server" Text='<%# Eval("hotel") %>'></asp:Label>
+                        <asp:Label ID="lblHotel" runat="server" Text='<%# Eval("Hotel.nome") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Cliente">
                     <ItemTemplate>
-                        <asp:Label ID="lblHotel" runat="server" Text='<%# Eval("cliente") %>'></asp:Label>
+                        <asp:Label ID="lblCliente" runat="server" Text='<%# Eval("Cliente.nome") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Data">
                     <ItemTemplate>
-                        <asp:Label ID="lblNome" runat="server" Text='<%# Eval("dataReserva") %>'></asp:Label>
+                        <asp:Label ID="lblData" runat="server" Text='<%# Eval("dataReserva", "{0:d}") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Quarto">
                     <ItemTemplate>
-                        <asp:Label ID="lblEndereco" runat="server" Text='<%# Eval("quarto") %>'></asp:Label>
+                        <asp:Label ID="lblQuarto" runat="server" Text='<%# Eval("Quarto.TipoQuarto.descricao") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

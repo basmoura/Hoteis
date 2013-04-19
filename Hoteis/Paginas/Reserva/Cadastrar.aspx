@@ -17,7 +17,9 @@
     <div>
         <div class="linha">
             <asp:Label ID="lblQuarto" runat="server" Text="Quarto" CssClass="label"></asp:Label><br />
-            <asp:DropDownList ID="ddlQuartos" runat="server" DataTextField="nrQuarto" DataValueField="nrQuarto" CssClass="dropdown" AppendDataBoundItems="True" OnDataBinding="ddlQuartos_DataBinding"></asp:DropDownList>
+            <asp:DropDownList ID="ddlQuartos" runat="server" DataTextField="nrQuarto" DataValueField="nrQuarto" CssClass="dropdown" AppendDataBoundItems="True" OnDataBinding="ddlQuartos_DataBinding">
+                <asp:ListItem Value="0">Selecione</asp:ListItem>
+            </asp:DropDownList>
         </div>
         <div class="linha">
             <asp:Label ID="lblDataReserva" runat="server" Text="Data de Reserva" CssClass="label"></asp:Label><br />

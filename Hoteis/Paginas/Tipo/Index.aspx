@@ -18,7 +18,7 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Descrição">
                     <ItemTemplate>
-                        <asp:Label ID="lblDescricao" runat="server" Text='<%# Eval("descricao" %>)'></asp:Label>
+                        <asp:Label ID="lblDescricao" runat="server" Text='<%# Eval("descricao") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

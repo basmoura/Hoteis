@@ -7,7 +7,7 @@
     <h1>Cadastrar Tipo</h1>
     <div>
         <asp:Label ID="lblIdTipo" runat="server" Text="Código" CssClass="label"></asp:Label><br />
-        <asp:TextBox ID="txtIdTipo" runat="server" CssClass="textbox"></asp:TextBox>
+        <asp:TextBox ID="txtIdTipo" runat="server" CssClass="textbox" MaxLength="6"></asp:TextBox>
         <asp:RequiredFieldValidator ID="rfvTipo" runat="server" ControlToValidate="txtIdTipo" ErrorMessage="Campo 'Código' é obrigatório" Text="*"></asp:RequiredFieldValidator>
         <ajaxToolkit:FilteredTextBoxExtender ID="ftbIdTipo" runat="server" FilterType="Numbers" TargetControlID="txtIdTipo"></ajaxToolkit:FilteredTextBoxExtender>
     </div>

@@ -13,19 +13,25 @@ namespace Hoteis.Paginas.Reserva
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ddlHoteis.DataSource = ControleHoteis.ListarHoteis();
-            ddlHoteis.DataBind();
+            if (!IsPostBack)
+            {
+                ddlHoteis.DataSource = ControleHoteis.ListarHoteis();
+                ddlHoteis.DataBind();
 
-            ddlClientes.DataSource = ControleClientes.ListarClientes();
-            ddlClientes.DataBind();
+                ddlClientes.DataSource = ControleClientes.ListarClientes();
+                ddlClientes.DataBind();
+            }
         }
 
         protected void cvData_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            DateTime dataReserva = Convert.ToDateTime(txtDataReserva.Text);
+            if (txtDataReserva.Text != "__/__/____")
+            {
+                DateTime dataReserva = Convert.ToDateTime(txtDataReserva.Text);
 
-            if (dataReserva < DateTime.Now.Date)
-                args.IsValid = false;
+                if (dataReserva < DateTime.Now.Date)
+                    args.IsValid = false;
+            }
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)

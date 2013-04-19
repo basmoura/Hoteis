@@ -36,10 +36,10 @@ namespace Hoteis.Paginas.Quarto
 
                 quarto.Hotel = hotel;
                 quarto.TipoQuarto = tipo;
-                quarto.NrQuarto = Convert.ToInt32(txtNrQuarto.Text);
-                quarto.QtdCamas = Convert.ToInt32(txtCamas.Text);
-                quarto.Tamanho = Convert.ToDouble(txtTamanho.Text);
-                quarto.VlDiaria = Convert.ToDouble(txtValorDiaria.Text);
+                quarto.NrQuarto = string.IsNullOrEmpty(txtNrQuarto.Text) ? 0 : Convert.ToInt32(txtNrQuarto.Text);
+                quarto.QtdCamas = string.IsNullOrEmpty(txtCamas.Text) ? 0 : Convert.ToInt32(txtCamas.Text);
+                quarto.Tamanho = string.IsNullOrEmpty(txtTamanho.Text) ? 0 : Convert.ToDouble(txtTamanho.Text);
+                quarto.VlDiaria = string.IsNullOrEmpty(txtValorDiaria.Text) ? 0 : Convert.ToDouble(txtValorDiaria.Text);
                 quarto.Disponivel = true;
 
                 ControleQuartos.Adicionar(quarto);
