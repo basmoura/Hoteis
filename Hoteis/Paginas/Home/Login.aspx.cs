@@ -17,6 +17,7 @@ namespace Hoteis.Paginas.Home
         protected void Page_Load(object sender, EventArgs e)
         {
             login.Add("basmoura", 123456);
+            login.Add("thiers", 24); 
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)

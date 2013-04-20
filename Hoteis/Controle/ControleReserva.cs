@@ -32,5 +32,10 @@ namespace Hoteis.Controle
 
             return reservas.ToList();
         }
+
+        public static Reserva BuscarReserva(int pCodigo)
+        {
+            return listaReservas.Find(r => r.Codigo == pCodigo);
+        }
     }
 }

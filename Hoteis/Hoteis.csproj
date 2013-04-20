@@ -74,6 +74,8 @@
     <Content Include="Paginas\AreaDeLazer\Index.aspx" />
     <Content Include="Paginas\Atividade\Cadastrar.aspx" />
     <Content Include="Paginas\Atividade\Index.aspx" />
+    <Content Include="Paginas\CheckOut\Cadastrar.aspx" />
+    <Content Include="Paginas\CheckOut\Index.aspx" />
     <Content Include="Paginas\Cliente\Cadastrar.aspx" />
     <Content Include="Paginas\Cliente\Index.aspx" />
     <Content Include="Paginas\Home\Index.aspx" />
@@ -108,11 +110,13 @@
   <ItemGroup>
     <Compile Include="Controle\ControleAreaLazer.cs" />
     <Compile Include="Controle\ControleAtividades.cs" />
+    <Compile Include="Controle\ControleCheckout.cs" />
     <Compile Include="Controle\ControleClientes.cs" />
     <Compile Include="Controle\ControleReserva.cs" />
     <Compile Include="Controle\Exceptions\Utils.cs" />
     <Compile Include="Modelo\AreaLazer.cs" />
     <Compile Include="Modelo\Atividade.cs" />
+    <Compile Include="Modelo\Checkout.cs" />
     <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\Hotel.cs" />
     <Compile Include="Modelo\Quarto.cs" />
@@ -147,6 +151,20 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Paginas\Atividade\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\CheckOut\Cadastrar.aspx.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\CheckOut\Cadastrar.aspx.designer.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\CheckOut\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\CheckOut\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Cliente\Cadastrar.aspx.cs">

@@ -5,6 +5,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
     <h1>Cadastrar Reserva</h1>
     <div>
+        <asp:Label ID="lblCodigo" runat="server" Text="Código" CssClass="label"></asp:Label><br />
+        <asp:TextBox ID="txtCodigo" runat="server" MaxLength="6" CssClass="textbox medium"></asp:TextBox>
+        <ajaxToolkit:FilteredTextBoxExtender ID="fteCodigo" runat="server" TargetControlID="txtCodigo" FilterType="Numbers"></ajaxToolkit:FilteredTextBoxExtender>
+        <asp:RequiredFieldValidator ID="rfvCodigo" runat="server" ControlToValidate="txtCodigo" ErrorMessage="Campo 'Código' é obrigatório" Text="*"></asp:RequiredFieldValidator>
+    </div>
+    <div>
         <div class="linha">
             <asp:Label ID="lblHotel" runat="server" Text="Hotel" CssClass="label"></asp:Label><br />
             <asp:DropDownList ID="ddlHoteis" runat="server" DataTextField="nome" DataValueField="codigo" CssClass="dropdown" AppendDataBoundItems="True" AutoPostBack="True" OnDataBinding="ddlHoteis_DataBinding" OnSelectedIndexChanged="ddlHoteis_SelectedIndexChanged"></asp:DropDownList>

@@ -21,3 +21,4 @@ C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\zh-CHS
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\bin\zh-CHT\AjaxControlToolkit.resources.dll
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\obj\Release\Hoteis.dll
 C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\obj\Release\Hoteis.pdb
+C:\Users\basmoura\Documents\Visual Studio 2012\Projects\Hoteis\Hoteis\obj\Release\Hoteis.csprojResolveAssemblyReference.cache

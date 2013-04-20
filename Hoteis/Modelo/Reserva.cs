@@ -7,12 +7,19 @@ namespace Hoteis.Modelo
 {
     public class Reserva
     {
+        private int codigo;
         private Cliente cliente;
         private DateTime dataReserva;
         private Hotel hotel;
         private Quarto quarto;
 
         public Reserva() { }
+
+        public int Codigo
+        {
+            get { return codigo; }
+            set { codigo = value; }
+        }
 
         public Cliente Cliente
         {

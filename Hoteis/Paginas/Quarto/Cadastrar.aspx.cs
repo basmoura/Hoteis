@@ -39,7 +39,7 @@ namespace Hoteis.Paginas.Quarto
                 quarto.NrQuarto = string.IsNullOrEmpty(txtNrQuarto.Text) ? 0 : Convert.ToInt32(txtNrQuarto.Text);
                 quarto.QtdCamas = string.IsNullOrEmpty(txtCamas.Text) ? 0 : Convert.ToInt32(txtCamas.Text);
                 quarto.Tamanho = string.IsNullOrEmpty(txtTamanho.Text) ? 0 : Convert.ToDouble(txtTamanho.Text);
-                quarto.VlDiaria = string.IsNullOrEmpty(txtValorDiaria.Text) ? 0 : Convert.ToDouble(txtValorDiaria.Text);
+                quarto.VlDiaria = string.IsNullOrEmpty(txtValorDiaria.Text) ? 0 : Convert.ToDecimal(txtValorDiaria.Text);
                 quarto.Disponivel = true;
 
                 ControleQuartos.Adicionar(quarto);

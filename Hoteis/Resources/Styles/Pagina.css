@@ -69,6 +69,14 @@ h1
         border: none;
     }
 
+h2
+{
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    margin: 15px 0 15px 0;
+}
+
 div.linha
 {
     display: inline-block;
@@ -241,6 +249,17 @@ div.center
         font-weight: 600;
     }
 
+    .label.tituloInfo
+    {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .label.info
+    {
+        font-size: 14px;
+    }
+
 .usuariologado
 {
     font-style: italic;
@@ -323,6 +342,7 @@ div.center
     padding-top: 5px;
     padding-left: 3px;
 }
+
 .radiobutton
 {
     display: inline-block;
@@ -331,6 +351,7 @@ div.center
     margin-top: 8px;
     margin-right: 15px;
 }
+
 .listbox
 {
     color: #333333;

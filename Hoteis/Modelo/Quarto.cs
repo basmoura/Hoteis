@@ -11,7 +11,7 @@ namespace Hoteis.Modelo
         private int nrQuarto;
         private int qtdCamas;
         private double tamanho;
-        private double vlDiaria;
+        private decimal vlDiaria;
         private bool disponivel;
 
         private Hotel hotel;
@@ -43,7 +43,7 @@ namespace Hoteis.Modelo
             set { tamanho = value; }
         }
 
-        public double VlDiaria
+        public decimal VlDiaria
         {
             get { return vlDiaria; }
             set { vlDiaria = value; }

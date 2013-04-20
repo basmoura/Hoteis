@@ -50,6 +50,7 @@ namespace Hoteis.Paginas.Reserva
                     {
                         quarto.Disponivel = false;
 
+                        reserva.Codigo = Convert.ToInt32(txtCodigo.Text);
                         reserva.Hotel = hotel;
                         reserva.Quarto = quarto;
                         reserva.Cliente = cliente;
